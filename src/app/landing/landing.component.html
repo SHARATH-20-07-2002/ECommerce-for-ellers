@@ -1,0 +1,13 @@
+<div class="content" style="margin-top: -3rem;">
+  <div fxLayout="row wrap" fxLayoutAlign="left" fxLayoutGap="2%">
+    <div class="box" *ngFor="let a of getproduct">
+      <a (click)="goToProduct(a.pid)">
+        <img [src]="a.image" alt="{{a.pname}}">
+        <div class="product-info">
+          <p class="product-name">{{a.pname}}</p>
+          <p class="product-category">{{a.pcategory}}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
